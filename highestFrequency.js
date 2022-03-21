@@ -8,12 +8,8 @@ console.log(
     highestFrequency1(["abc", "abc", "def", "def", "def", "ghi", "ghi", "ghi", "ghi"]),
 );
 
-console.log(
-    highestFrequency2(["a", "b", "c", "d", "a"]),
-    highestFrequency2(["a", "b", "c", "d"]),
-    highestFrequency2(["abc", "abc", "def", "def", "def", "ghi", "ghi", "ghi", "ghi"]),
-);
-
+// Time: O(n)
+// Space: O(n)
 function highestFrequency1(arr) {
     const wordCount = {};
     let max = 0;
@@ -32,8 +28,4 @@ function highestFrequency1(arr) {
         }
     }
     return maxWord;
-}
-
-function highestFrequency2(str){
-
 }
